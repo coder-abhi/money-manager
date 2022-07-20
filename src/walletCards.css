@@ -1,26 +1,100 @@
-.cards{
-    background-color: blueviolet;
-    height: 6em;
-    width: 20em;
-    border-radius: 30px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .cards-circle{
-    background-color: brown;
-    width: 5em;
-    height: 5em;
-    border-radius: 50%;
-    margin: 0.8em;
-  }
-  .cards-right{
-    background-color: cadetblue;
-    margin-right: 0.8em;
-    width: 70%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
+.wallet-cards{
+  /* display: flex; */
+  /* flex-direction:row; */
+  /* flex-wrap: wrap; */
+  /* background-color: #cc4b37; */
+  /* width: 100vh; */
+  /* padding: 1em 0; */
+}
+.wallet-cards-img{
+  padding: 15px;
+  width: 70px;
+  height: 70px;
+}
+.dashboard-number-card {
+  /* background: #fff; */
+  /* color: #fefefe; */
+  border-radius: 5px;
+  margin: 0 20px 20px;
+  position: relative;
+  max-width: 15em;
+  max-height: 7em;
+  background-color: #3adb76;
+  display: flex;
+  
+}
+
+.dashboard-number-card .dashboard-number-delta {
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  bottom: 6px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+  opacity: 0.7;
+  position: absolute;
+  right: 6px;
+  color: #fefefe;
+}
+
+.dashboard-number-card .dashboard-number-delta i {
+  margin-right: 5px;
+  width: 0.6rem;
+}
+
+.dashboard-number-card.positive .dashboard-number-delta, .dashboard-number-card.negative .dashboard-number-delta {
+  color: #fefefe;
+}
+
+.dashboard-number-card.positive .dashboard-number-value,
+.dashboard-number-card.positive .dashboard-number-area, .dashboard-number-card.negative .dashboard-number-value,
+.dashboard-number-card.negative .dashboard-number-area {
+  color: white;
+}
+
+.dashboard-number-card.positive .dashboard-number-area, .dashboard-number-card.negative .dashboard-number-area {
+  opacity: 0.6;
+}
+
+.dashboard-number-card.positive {
+  background: #3adb76;
+}
+
+.dashboard-number-card.negative {
+  background: #cc4b37;
+}
+
+.dashboard-number-right{
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  height: 5em;
+}
+
+.wallet-cards-title{
+  padding-left: 1em;
+  font-size: 20px;
+}
+
+.dashboard-number-value {
+  color: #fefefe;
+  /* background-color: #cc4b37; */
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem 1.75rem ;
+  text-align: center;
+}
+
+.dashboard-number-area {
+  bottom: 6px;
+  color: #fefefe;
+  font-size: 12px;
+  /* left: 6px; */
+  margin-bottom: 0;
+  position: absolute;
+}
+

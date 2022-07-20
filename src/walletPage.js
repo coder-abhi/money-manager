@@ -1,14 +1,15 @@
 import React from 'react'
-import walletCards from './walletCards'
+import WalletCards from './WalletCards'
+import './WalletPage.css'
 function walletPage() {
   return (
-    <div>
-        <walletCards />
-        <walletCards />
-        <walletCards />
-        <walletCards />
-        <walletCards />
-        <walletCards />
+    <div className='wallet-page'>
+        <WalletCards />
+        <WalletCards />
+        <WalletCards />
+        <WalletCards />
+        <WalletCards />
+        <WalletCards />
     </div>
   )
 }
