@@ -8,6 +8,7 @@ function Entry() {
     useEffect(() => {
       
         console.log(type)
+        console.log(new Date().toJSON().slice(0,10))
     }, [type])
     
 
@@ -23,7 +24,7 @@ function Entry() {
 
             <input type="text" placeholder='Reason'/>
             <input type="number" placeholder='Amount' />
-            <input type="date" placeholder={new Date()}/>
+            <input type="date" value={new Date().toJSON().slice(0,10)} onChange={()=>{}}/>
 
             <select id='transaction-wallet' className='entry-input-box-select' value={wallet} onChange={e => setWallet(e.target.value)}>
                 <option value="" disabled selected >From : Wallet</option>
@@ -40,7 +41,7 @@ function Entry() {
             </select>
 
             <input type="text" placeholder='Remarks (Optional)' />
-            <button >Add Record</button>
+            <button >Add Recordd</button>
         </div>
 
     </div>
