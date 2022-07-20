@@ -1,4 +1,5 @@
 import React from 'react'
+import Entry from './Entry'
 import Header from './Header'
 import WalletPage from './WalletPage'
 
@@ -8,6 +9,7 @@ function App() {
 
         <Header />
         <WalletPage />
+        <Entry />
     </div>
   )
 }
