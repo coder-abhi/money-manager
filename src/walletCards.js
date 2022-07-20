@@ -1,6 +1,6 @@
 import React from 'react'
 import './WalletCards.css'
-import WalletOfficial from './images/WalletOfficial.png'
+// import WalletOfficial from './images/WalletOfficial.png'
 function walletCards() {
     return (
         <div class="wallet-cards">
